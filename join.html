@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+<meta charset="UTF-8">
+<!-- bootstrap과 jquery사용 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+	<form action="JoinOk" method="post">
+		<fieldset>
+			<legend>가입화면</legend>
+			이름 : <input type="text" name="name" size="10"><br />
+			아이디 : <input type="text" name="id" size="10"><br />
+			비밀번호 : <input type="text" name="pw" size="10"><br />
+			전화번호 : <select name="phone1">
+				<option value="010">010</option>
+				<option value="016">016</option>
+				<option value="017">017</option>
+				<option value="018">018</option>
+				<option value="019">019</option>
+				<option value="011">011</option>
+			</select>
+			- <input type="text" name="phone2" size="5"> - <input type="text" name="phone3" size="5"> <br />
+			성별구분 : <input type="radio" name="gender" value="man">남
+			&nbsp;<input type="radio" name="gender" value="woman">여 <br />
+			<input type="submit" value="회원가입"> &nbsp; <input type="reset" value="취소">		
+		</fieldset>		
+	</form>
+</div>
+
+</body>
+</html>
